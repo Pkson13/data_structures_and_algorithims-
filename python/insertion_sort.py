@@ -47,5 +47,4 @@ print(list)
 #exceptionally ez :)
 
 
-
     
