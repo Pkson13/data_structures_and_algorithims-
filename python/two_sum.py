@@ -44,7 +44,7 @@ def twoSum(nums, target):
     lookup = {}
     for i, value in enumerate(nums):
         diff = target - value
-        if diff in lookup.keys():
+        if diff in lookup:
             return [i, lookup[diff]]
         lookup[value] = i
 
