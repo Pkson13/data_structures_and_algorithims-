@@ -44,12 +44,12 @@ def twoSum(nums, target):
     lookup = {}
     for i, value in enumerate(nums):
         diff = target - value
-        if diff in lookup:
+        if diff in lookup.keys():
             return [i, lookup[diff]]
         lookup[value] = i
 
 
-nums = [2, 7, 11, 15]
+nums = [2, 11, 15, 7]
 target = 9
 # nums = [3, 2, 4]
 # target = 6
